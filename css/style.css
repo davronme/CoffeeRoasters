@@ -213,8 +213,6 @@ body{
 }
 
 /* INDEX-COLLECTION */
-.index-collection {
-}
 .index-collection-inner {
   background-color: var(--light-bgc);
   background-image: url(../img/index-collection-bgi.jpg);
