@@ -6,6 +6,7 @@
   --accent-color-light-brown: #c99b67;
   --accent-color-light-brown-80: rgb(201, 155, 103, 0.8);
   --accent-color-light-brown-60: rgb(201, 155, 103, 0.6);
+  --light-bgc: #f8f8f2;
   --light-brown: #f3d7b7;
 }
 @font-face {
@@ -207,8 +208,67 @@ body{
 /* MAIN CONTENT */
 .main-content{
   flex-grow: 1;
+  padding-top: 20px;
+  padding-bottom: 50px;
 }
 
+/* INDEX-COLLECTION */
+.index-collection {
+}
+.index-collection-inner {
+  background-color: var(--light-bgc);
+  background-image: url(../img/index-collection-bgi.jpg);
+}
+.index-collection-heading {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 59px;
+  text-align: center;
+  color: #000000;
+  padding-top: 50px;
+  margin-bottom: 30px;
+}
+.index-collection-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  padding: 50px 143px;
+}
+.index-collection-item {
+  display: flex;
+  align-items: center;
+}
+.index-collection-item-packet-img {
+  flex-shrink: 0;
+  width: 450px;
+  height: 375px;
+  object-fit: cover;
+
+}
+.index-collection-info {
+  margin-left: 117px;
+  margin-right: 117px;
+  flex-grow: 1;
+}
+.index-collection-item-heading {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.index-collection-item-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 34px;
+}
 /* RETENA SCREEN */
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -219,5 +279,8 @@ only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
   .site-headeer-hero-wrapper{
     background-image: url(../img/header-bgi@2x.jpg);
+  }
+  .index-collection {
+    background-image: url(../img/index-collection-bgi@2x.jpg);
   }
 }
