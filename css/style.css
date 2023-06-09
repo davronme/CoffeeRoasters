@@ -102,6 +102,16 @@ body{
   background-color: var(--accent-color-green-60)
 }
 
+.button-light-brown {
+  background-color: var(--accent-color-light-brown)
+}
+.button-light-brown:hover {
+  background-color: var(--accent-color-light-brown-80)
+}
+.button-light-brown:active {
+  background-color: var(--accent-color-light-brown-60)
+}
+
 /* SITE HEADER */
 .site-headeer-hero-wrapper{
   background-image: url(../img/header-bgi.jpg);
@@ -345,6 +355,97 @@ body{
   margin-bottom: 10px;
 }
 
+
+/* HOW IT WORKING */
+.how-it-works-inner {
+  background-color: var(--accent-color-green);
+  background-image: url(../img/green-bgi.jpg);
+  padding: 50px 30px;
+  text-align: center;
+}
+.how-it-works-heading {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 59px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 160px;
+}
+.how-it-works-list {
+  padding: 0;
+  margin: 0;
+  padding: 20px;
+  margin-left: -20px;
+  margin-bottom: 60px;
+  display: flex;
+  text-align: left;
+  list-style: none;
+  counter-reset: how-it-works;
+}
+
+.how-it-works-item {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% / 3 -20px);
+  margin-left: 20px;
+  counter-increment: how-it-works;
+}
+.how-it-works-item::before {
+  width: 60px;
+  height: 60px;
+  border: 4px solid var(--accent-color-light-brown);
+  background-color: var(--light-brown);
+  margin-bottom: 20px;
+  content: "";
+}
+.how-it-works-info::before{
+  content: "0"counter(how-it-works);
+  margin-bottom: 45px;
+  align-self: flex-end;
+  font-size: 64px;
+  line-height: 75px;
+  opacity: 0.8;
+}
+
+.how-it-works-info{
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--light-index-collection-bgc);
+  padding: 20px 20px 40px;
+}
+/* .item-couter {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 75px;
+  color: rgba(51, 51, 51, 0.8);
+  margin-bottom: 45px;
+} */
+.item-heading {
+  margin: 0;
+  width: 100%;
+  max-width: 250px;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  text-transform: uppercase;
+}
+.item-text {
+  margin: 0;
+  width: 100%;
+  min-width: 385px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.how-it-works-cta:focus{
+  outline-color: var(--accent-color-light-brown);
+}
 /* RETENA SCREEN */
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -361,5 +462,8 @@ only screen and (                min-resolution: 2dppx) {
   }
   .index-features-inner {
     background-image: url(../img/index-features-bgi@2x.jpg);
+  }
+  .how-it-works-inner {
+    background-image: url(../img/green-bgi@2x.jpg);
   }
 }
