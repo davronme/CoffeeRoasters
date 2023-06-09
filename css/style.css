@@ -446,6 +446,47 @@ body{
 .how-it-works-cta:focus{
   outline-color: var(--accent-color-light-brown);
 }
+
+/* SITE-FOOTER */
+.site-footer{
+  background-image: url(../img/header-bgi.jpg);
+}
+.site-footer-inner {
+  padding: 70px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-footer-sitenav-list {
+  display: flex;
+  list-style: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.site-footer-sitenav-item:not(:last-child) {
+  margin-right: 40px;
+}
+.site-footer-sitenav-link {
+  text-decoration: none;
+  color: var(--text-color)
+}
+.socials-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+
+}
+.socials-item:not(:last-child) {
+  margin-right: 30px;
+}
+.socials-link{
+  display: inline-block;
+}
 /* RETENA SCREEN */
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -465,5 +506,8 @@ only screen and (                min-resolution: 2dppx) {
   }
   .how-it-works-inner {
     background-image: url(../img/green-bgi@2x.jpg);
+  }
+  .site-footer{
+  background-image: url(../img/header-bgi@2x.jpg);
   }
 }
